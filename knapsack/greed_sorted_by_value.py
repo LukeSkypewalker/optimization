@@ -4,9 +4,9 @@ from common import *
 
 def solve_it(input_data):
     """
-    >>> solve_it(*get_data('./data/ks_4_0'))
+    >>> solve_it(get_data('./data/ks_4_0'))
     '19 0\\n0 0 1 1'
-    >>> solve_it(*get_data('./data/ks_19_0'))
+    >>> solve_it(get_data('./data/ks_19_0'))
     '12066 0\\n0 0 1 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0'
     """
     items, capacity = get_items(input_data)

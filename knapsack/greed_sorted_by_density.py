@@ -3,9 +3,9 @@ from common import *
 
 def solve_it(input_data):
     """
-    >>> solve_it(*get_data('./data/ks_4_0'))
+    >>> solve_it(get_data('./data/ks_4_0'))
     '18 0\\n1 1 0 0'
-    >>> solve_it(*get_data('./data/ks_19_0'))
+    >>> solve_it(get_data('./data/ks_19_0'))
     '11981 0\\n0 0 1 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0'
     """
 
@@ -34,3 +34,4 @@ if __name__ == '__main__':
     import doctest
 
     doctest.testmod()
+    print 'hello'
