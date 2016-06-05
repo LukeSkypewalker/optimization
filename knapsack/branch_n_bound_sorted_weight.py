@@ -15,6 +15,8 @@ def solve_it(input_data):
     for j, item in enumerate(items):
         items_sorted.append(Item(j, item.value, item.weight))
 
+    # print items_sorted
+
     nodes = []
     taken = [0] * len(items_sorted)
     if items_sorted[0].weight <= capacity:
