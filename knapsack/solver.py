@@ -2,11 +2,13 @@
 # -*- coding: utf-8 -*-
 import sys
 import greed_sorted_by_density as greed
+import dynamic as dyn
 from common import get_data
 
 
 def solve_it(input_data):
-    return greed.solve_it(input_data)
+    print input_data
+    return dyn.solve_it(input_data)
 
 
 if __name__ == '__main__':

@@ -1,6 +1,9 @@
 from common import *
 
 
+
+
+
 def solve_it(input_data):
     """
     >>> solve_it(get_data('./data/ks_4_0'))
@@ -25,8 +28,7 @@ def solve_it(input_data):
             weight += item.weight
 
     # prepare the solution in the specified output format
-    output_data = str(value) + ' ' + str(0) + '\n'
-    output_data += ' '.join(map(str, taken))
+    output_data = convert_answer(value, taken, is_optimal=False)
     return output_data
 
 

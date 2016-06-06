@@ -21,3 +21,9 @@ def get_items(input_data):
         parts = line.split()
         items.append(Item(i - 1, int(parts[0]), int(parts[1])))
     return items, capacity
+
+
+def convert_answer(value, taken, is_optimal=False):
+    output_data = str(value) + ' ' + str(0) + '\n'
+    output_data += ' '.join(map(str, taken))
+    return output_data
