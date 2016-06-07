@@ -4,27 +4,22 @@ from common import *
 Best_set = namedtuple("Best_set", ['value', 'weight', 'taken'])
 
 
-def get_max_bound(i, items, value, weight, capacity):
+def estimate_max_value(items, capacity):
     """
     >>> test_items = [Item(index=0, value=10, weight=5), Item(index=1, value=8, weight=4), Item(index=2, value=15, weight=8), Item(index=3, value=4, weight=3)]
-    >>> get_max_bound(0, test_items, 10, 5, 11)
+    >>> estimate_max_value(test_items, 11)
     21.75
-    >>> get_max_bound(0, test_items, 0, 0, 11)
-    21.125
-    >>> get_max_bound(2, test_items, 0, 0, 11)
-    4
-    >>> get_max_bound(100, test_items, 0, 0, 11)
-    0
     """
 
-    while i < len(items) - 1:
-        i += 1
-        if capacity >= weight + items[i].weight:
-            weight += items[i].weight
-            value += items[i].value
+    value = 0
+    weight = 0
+    for item in items:
+        if weight + item.weight <= capacity:
+            value += item.value
+            weight += item.weight
         else:
-            free_weight = capacity - weight
-            fraction_value = items[i].value * (free_weight / float(items[i].weight))
+            remain_capacity = capacity - weight
+            fraction_value = item.value * (remain_capacity / float(item.weight))
             value += fraction_value
             break
     return value
@@ -70,8 +65,8 @@ def solve_it(input_data):
             # print v, w
             continue
 
-        bound = get_max_bound(i, items, v, w, capacity)
-        if best_set[0] >= bound:
+        max_remain_value = estimate_max_value(items[i + 1:], capacity - w)
+        if best_set[0] >= v + max_remain_value:
             # print 'pruned', best_set[0], '>', bound
             continue
 
@@ -87,5 +82,5 @@ if __name__ == '__main__':
 
     doctest.testmod()
 
-    best = solve_it(get_data('./data/ks_45_0'))
+    best = solve_it(get_data('./data/ks_19_0'))
     print best
