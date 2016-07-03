@@ -47,7 +47,7 @@ if __name__ == '__main__':
     doctest.testmod()
 
     start = datetime.now()
-    res = solve_it(get_data('./data/ks_10000_0'))
+    res = solve_it(get_data('./data/ks_100_0'))
     end = datetime.now()
 
     print res

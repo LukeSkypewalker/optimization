@@ -1,3 +1,4 @@
+from collections import namedtuple
 from operator import attrgetter
 from common import *
 
@@ -26,11 +27,11 @@ def estimate_max_value(items, capacity):
 
 
 def solve_it(input_data):
-    # """
-    # >>> solve_it(get_data('./data/ks_4_0'))
-    # counter = 30
-    # [19, 11, [1, 0, 0, 1]]
-    # """
+    """
+    >>> solve_it(get_data('./data/ks_4_0'))
+    counter = 20
+    [19, 11, [0, 0, 1, 1]]
+    """
 
     items, capacity = get_items(input_data)
     items.sort(key=lambda x: (x.value / float(x.weight), x.value), reverse=True)
@@ -38,7 +39,7 @@ def solve_it(input_data):
     for j, item in enumerate(items):
         items_sorted.append(Item(j, item.value, item.weight))
 
-    print items_sorted
+    # print items_sorted
 
     taken = [0] * len(items_sorted)
     nodes = []
