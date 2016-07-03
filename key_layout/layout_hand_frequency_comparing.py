@@ -22,8 +22,6 @@ norman = ('Q', 'W', 'D', 'F', 'K',
           'Z', 'X', 'C', 'V', 'B')
 
 
-
-
 combs = (aset_nior, qwerty, aest, norman,workman)
 
 comb_sum = calc_combs_sums(combs, bigrams)

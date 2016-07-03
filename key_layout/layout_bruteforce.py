@@ -6,7 +6,7 @@ from key_layout.data import *
 
 
 # left_hand_layout_combs = combinations(letters, len(letters) // 2)
-left_hand_layout_combs = combinations(letters, 15)
+left_hand_layout_combs = combinations(letters26, 15)
 
 
 time_start = datetime.now()

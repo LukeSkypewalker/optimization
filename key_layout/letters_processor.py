@@ -22,8 +22,6 @@ def calc_letters_freq(letter, bigrams):
     return data
 
 
-
-
 if __name__ == '__main__':
     from key_layout.data import *
 
