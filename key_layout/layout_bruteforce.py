@@ -18,7 +18,7 @@ print('time', time_end - time_start)
 
 print(*comb_sum, sep='\n')
 total_probability = sum(i for _, _, i in bigrams)
-print('hand switching freaquency:', comb_sum[-1][1] / total_probability)
+print('hand switching frequency:', comb_sum[-1][1] / total_probability)
 
 
-store_to_file(comb_sum, 'full.txt')
+store_to_file(comb_sum, 'result.txt')
