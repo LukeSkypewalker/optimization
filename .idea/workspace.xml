@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23ac2798-1f88-401b-b522-174981d5c319" name="Default" comment="key refactored">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/bigrams8.txt" />
+    <list default="true" id="23ac2798-1f88-401b-b522-174981d5c319" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/key_layout/complexity.py" afterPath="$PROJECT_DIR$/key_layout/complexity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/key_layout/data.py" afterPath="$PROJECT_DIR$/key_layout/data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/key_layout/letters_matplot.py" afterPath="$PROJECT_DIR$/key_layout/letters_matplot.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/key_layout/letters_processor.py" afterPath="$PROJECT_DIR$/key_layout/letters_processor.py" />
     </list>
     <ignored path="optimization.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -660,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1469622105465</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="key refactored">
+      <created>1469741972402</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1469741972402</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
