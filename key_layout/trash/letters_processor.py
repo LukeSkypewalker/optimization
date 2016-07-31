@@ -1,4 +1,5 @@
-from key_layout.data import *
+from key_layout.data.data import *
+
 
 def calc_letter_freq(letter, bigrams):
     """
@@ -86,14 +87,13 @@ def get_bigram_list_summarized(_letter, bigrams):
 
 
 if __name__ == '__main__':
-    from key_layout.data import *
     import doctest
     doctest.testmod()
 
     # check letters frequencies
-    # letters_freq = calc_letters_freq(letters26, bigrams)
-    # letters_freq.sort(key=lambda x: x[1], reverse=True)
-    # print(*letters_freq, sep='\n')
+    letters_freq = calc_letters_freq(letters26, bigrams)
+    letters_freq.sort(key=lambda x: x[1], reverse=True)
+    print(*letters_freq, sep='\n')
 
     # data = get_all_letters_bigrams('A', bigrams)
     # data.sort(key=lambda x: x[2], reverse=True)

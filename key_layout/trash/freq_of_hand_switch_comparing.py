@@ -1,5 +1,4 @@
-from key_layout.bigpams_processor import *
-from key_layout.data import *
+from key_layout.trash.freq_of_hand_switch_processor import *
 
 aset = ('Q', 'D', 'F', 'P', 'K',
         'A', 'S', 'E', 'T', 'G',

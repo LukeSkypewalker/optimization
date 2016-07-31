@@ -1,9 +1,10 @@
+from pprint import pprint
+
 import matplotlib.pyplot as plt
 import numpy as np
-from pprint import pprint
-from key_layout.letters_processor import get_bigram_list_summarized
-from key_layout.data import *
 
+from key_layout.trash.letters_processor import get_bigram_list_summarized
+from key_layout.data.data import bigrams
 
 # data = get_bigram_list_summarized('E', bigrams)
 # data = [get_bigram_list_summarized(letter) for letter in letters26]

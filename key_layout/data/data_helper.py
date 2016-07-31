@@ -27,6 +27,16 @@ def get_bigrams_dict(input_data):
     return bi_dict
 
 
+def get_freq_dict(input_data):
+    f_dict = {}
+    lines = input_data.split('\n')
+    for line in lines:
+        letter = line[0]
+        frequency = float(line[2:])
+        f_dict[letter] = frequency
+    return f_dict
+
+
 def store_to_file(comb_sum, filename):
     target = open(filename, 'w')
     target.truncate()
@@ -37,7 +47,10 @@ def store_to_file(comb_sum, filename):
 
 if __name__ == '__main__':
 
-    bigrams = get_bigrams_list(get_data('bigrams.txt'))
+    bigrams = get_bigrams_list(get_data('data/bigrams.txt'))
     from pprint import pprint
     pprint(bigrams)
     # equal to print(*bigrams, sep='\n')
+
+    # pprint(get_freq_dict(get_data('data/freq_norvig.txt')))
+

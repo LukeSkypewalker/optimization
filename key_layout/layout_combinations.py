@@ -1,75 +1,15 @@
-from key_layout.data import *
+from key_layout.data.data import *
+from key_layout.flow_processor import *
 from itertools import permutations
 from itertools import combinations
 
-alpha = 1
 
-
-def calc_combs_sums(left_hand_combs, bigrams):
-    return [(comb, calc_comb_sum(comb, bigrams)) for comb in left_hand_combs]
-
-
-def calc_comb_sum(left_hand_comb, bigrams):
-    return sum(b[2] for b in bigrams if (b[0] in left_hand_comb) != (b[1] in left_hand_comb))
-
-
-def calc_layout(layout, bigrams):
-    '''
-
-    >>> calc_layout(['R', 'O', 'I', 'A', 'N', 'S', 'E', 'T'], bigrams)
-    4659003025.7
-    >>> calc_layout(['R', 'O', 'I', 'A', 'N', 'S', 'E', 'T'], bigrams8)
-    2422157445.7000012
-    '''
-
-    n = len(layout) // 2
-    hands = [layout[0:n], layout[n:]]
-    # print(*layout, sep='\n')
-    # print(*hands)
-    s = 0
-
-    for hand in hands:
-        # print(hand)
-        s += calc_hand(hand, bigrams)
-    return round(s)
-
-
-def calc_hand(hand, bigrams):
-    res = 0
-    for b in bigrams:
-        if b[0] == b[1]:
-            continue
-
-        k = 0
-        if (b[0] in hand) != (b[1] in hand):
-            k = 1
-        if (b[0] in hand) and (b[1] in hand):
-            i = hand.index(b[0])
-            j = hand.index(b[1])
-            k = efforts_full[i][j] * alpha
-            # print(b, i, j, k)
-
-        # print(b, k)
-        res += b[2] * k
-    return res
-
-
-def calc_combs_sums_homerow(left_hand_combs, bigrams):
-    return [(comb, calc_comb_sum_homerow(comb, bigrams)) for comb in left_hand_combs]
-
-
-def calc_comb_sum_homerow(left_hand_comb, bigrams):
-    return sum(b[2] for b in bigrams
-               if ((b[0] in left_hand_comb) != (b[1] in left_hand_comb)) or
-               (b[0] in letters8 and b[1] in letters8))
-
-
-def get_best_hand_perm(hand_layout):
-    hand_perms = list(permutations(hand_layout))
+def get_best_hand_perm_bruteforce(letters):
+    hand_perms = list(permutations(letters))
     best_hand = hand_perms[0]
     best_score = 0
     for hand in hand_perms:
-        res = calc_hand(hand, bigrams)
+        res = calc_hand_flow(hand, bigrams)
         if res > best_score:
             best_score = res
             best_hand = hand
@@ -77,7 +17,7 @@ def get_best_hand_perm(hand_layout):
     return round(best_score)
 
 
-def get_best_hand_smart_perm(letters):
+def get_best_hand_perm_smart(letters):
     best_hand = letters
     best_score = 0
     for comb in list(combinations(letters[0:5], 4)):
@@ -85,7 +25,7 @@ def get_best_hand_smart_perm(letters):
             not_in_comb = list([x for x in letters if x not in comb])
             for perm1 in list(permutations(not_in_comb)):
                 hand = perm0 + perm1
-                res = calc_hand(hand, bigrams)
+                res = calc_hand_flow(hand, bigrams)
                 if res > best_score:
                     best_score = res
                     best_hand = hand
@@ -97,10 +37,9 @@ def get_best_hand_smart_perm(letters):
 
 if __name__ == '__main__':
     from itertools import combinations
-    from key_layout.data import *
 
-    # import doctest
-    # doctest.testmod()
+    import doctest
+    doctest.testmod()
 
     # left_hand_layout_combs = combinations(letters8, len(letters8) // 2)
     # comb_sum = calc_combs_sums(left_hand_layout_combs, bigrams8)
@@ -131,8 +70,8 @@ if __name__ == '__main__':
     # res = calc_layout(asdf_jkl_, bigrams)
     # res = calc_layout(work_man_, bigrams)
 
-    # res = get_best_hand_perm(freq1)
-    res = get_best_hand_smart_perm(freq2)
+    res = get_best_hand_perm_smart(freq1)
+    # res = get_best_hand_perm_smart(freq2)
     print(res)
     # print(total_probability)
     # print(res / total_probability)

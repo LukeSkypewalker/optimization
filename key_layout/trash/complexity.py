@@ -3,6 +3,8 @@ from math import factorial
 
 def calc(num_of_keys):
     """
+    >>> calc(20)
+    184756.0
     >>> calc(22)
     705432.0
     >>> calc(26)
