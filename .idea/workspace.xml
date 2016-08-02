@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23ac2798-1f88-401b-b522-174981d5c319" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/balance_processor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/data/data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/data/freq_bigrams.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/data/freq_norvig.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/layout_combinations.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/layout_permutations.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/layout_score_calc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/similarity_processor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_processor.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/key_layout/data.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/data/layouts.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/hand_permutations.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/jit_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key_layout/position_processor.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/key_layout/layout_permutations.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/bigpams_processor.py" afterPath="$PROJECT_DIR$/key_layout/flow_processor.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/bigrams.txt" afterPath="$PROJECT_DIR$/key_layout/data/bigrams.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/bigrams8.txt" afterPath="$PROJECT_DIR$/key_layout/data/bigrams8.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/complexity.py" afterPath="$PROJECT_DIR$/key_layout/trash/complexity.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/data_helper.py" afterPath="$PROJECT_DIR$/key_layout/data/data_helper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/layout8_bruteforce.py" afterPath="$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch8_bruteforce.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/layout_bruteforce.py" afterPath="$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_bruteforce.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/layout_hand_frequency_comparing.py" afterPath="$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_comparing.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/letters_matplot.py" afterPath="$PROJECT_DIR$/key_layout/trash/letters_matplot.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/letters_processor.py" afterPath="$PROJECT_DIR$/key_layout/trash/letters_processor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/key_layout/balance_processor.py" afterPath="$PROJECT_DIR$/key_layout/balance_processor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/key_layout/flow_processor.py" afterPath="$PROJECT_DIR$/key_layout/flow_processor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/key_layout/layout_combinations.py" afterPath="$PROJECT_DIR$/key_layout/layout_combinations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/key_layout/similarity_processor.py" afterPath="$PROJECT_DIR$/key_layout/similarity_processor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch8_bruteforce.py" afterPath="$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch8_bruteforce.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/key_layout/layout_score_calc.py" afterPath="$PROJECT_DIR$/key_layout/hand_score_calc.py" />
     </list>
     <ignored path="optimization.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,41 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="freq_of_hand_switch_processor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_processor.py">
+      <file leaf-file-name="flow_processor.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/key_layout/flow_processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="letters_matplot.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/key_layout/trash/letters_matplot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="letters_processor.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/key_layout/trash/letters_processor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout_permutations.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/key_layout/layout_permutations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+            <state relative-caret-position="1525">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -85,34 +46,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="freq_of_hand_switch_bruteforce.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_bruteforce.py">
+      <file leaf-file-name="jit_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/key_layout/jit_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="375">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="50" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="freq_of_hand_switch_comparing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_comparing.py">
+      <file leaf-file-name="position_processor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/key_layout/position_processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="250">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="freq_of_hand_switch8_bruteforce.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch8_bruteforce.py">
+      <file leaf-file-name="hand_permutations.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/key_layout/hand_permutations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="1375">
+              <caret line="58" column="33" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,36 +83,41 @@
       <file leaf-file-name="layout_combinations.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/key_layout/layout_combinations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="625">
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="balance_processor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/key_layout/balance_processor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="968">
+              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hand_score_calc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/key_layout/hand_score_calc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#0#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout_score_calc.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/key_layout/layout_score_calc.py">
+      <file leaf-file-name="similarity_processor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/key_layout/similarity_processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-                <marker date="1470003771075" expanded="true" signature="166:284" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flow_processor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/key_layout/flow_processor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="568">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -171,12 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/key_layout/bigrams" />
-        <option value="$PROJECT_DIR$/key_layout/bigrams.txt" />
-        <option value="$PROJECT_DIR$/key_layout/bigrams_test.txt" />
-        <option value="$PROJECT_DIR$/2gis/file_reader.py" />
-        <option value="$PROJECT_DIR$/2gis/vk_parser.py" />
-        <option value="$PROJECT_DIR$/2gis/regex.py" />
         <option value="$PROJECT_DIR$/2gis/parser.py" />
         <option value="$PROJECT_DIR$/key_layout/ase.py" />
         <option value="$PROJECT_DIR$/key_layout/bigrams_8.txt" />
@@ -214,13 +176,19 @@
         <option value="$PROJECT_DIR$/key_layout/trash/letters_matplot.py" />
         <option value="$PROJECT_DIR$/key_layout/data/freq_norvig.txt" />
         <option value="$PROJECT_DIR$/key_layout/data/data.py" />
-        <option value="$PROJECT_DIR$/key_layout/data/data_helper.py" />
         <option value="$PROJECT_DIR$/key_layout/layout_calc.py" />
-        <option value="$PROJECT_DIR$/key_layout/balance_processor.py" />
-        <option value="$PROJECT_DIR$/key_layout/similarity_processor.py" />
-        <option value="$PROJECT_DIR$/key_layout/layout_score_calc.py" />
         <option value="$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_bruteforce.py" />
+        <option value="$PROJECT_DIR$/key_layout/trash/complexity.py" />
+        <option value="$PROJECT_DIR$/key_layout/data/layouts.txt" />
+        <option value="$PROJECT_DIR$/key_layout/layout_score_calc.py" />
         <option value="$PROJECT_DIR$/key_layout/layout_permutations.py" />
+        <option value="$PROJECT_DIR$/key_layout/data/data_helper.py" />
+        <option value="$PROJECT_DIR$/key_layout/similarity_processor.py" />
+        <option value="$PROJECT_DIR$/key_layout/hand_score_calc.py" />
+        <option value="$PROJECT_DIR$/key_layout/hand_permutations.py" />
+        <option value="$PROJECT_DIR$/key_layout/balance_processor.py" />
+        <option value="$PROJECT_DIR$/key_layout/position_processor.py" />
+        <option value="$PROJECT_DIR$/key_layout/test.py" />
         <option value="$PROJECT_DIR$/key_layout/flow_processor.py" />
       </list>
     </option>
@@ -331,7 +299,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="trash" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,7 +309,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Anaconda3/python.exe" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="282" />
@@ -379,59 +347,8 @@
       <recent name="D:\DEV\Python\projects\optimization\knapsack" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.flow_processor">
-    <configuration default="false" name="flow_processor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/key_layout" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="optimization" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/flow_processor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="layout_score_calc" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/key_layout" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="optimization" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/layout_score_calc.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="similarity_processor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/key_layout" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="optimization" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/similarity_processor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Doctests in balance_processor (1)" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.flow">
+    <configuration default="false" name="Doctest calc_hand_score" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -441,7 +358,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="optimization" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/balance_processor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/hand_score_calc.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="calc_hand_score" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctests in flow_processor" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/key_layout" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="optimization" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/flow_processor.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -450,7 +386,26 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="layout_permutations" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Doctests in similarity_processor" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/key_layout" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="optimization" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/similarity_processor.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="hand_permutations" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -462,7 +417,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="optimization" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/layout_permutations.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/hand_permutations.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/key_layout" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="optimization" />
+      <option name="SCRIPT_NAME" value="D:\DEV\Python\projects\optimization\key_layout\jit_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -601,6 +573,23 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="hand_calc" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\DEV\Python\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/key_layout" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="optimization" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/hand_score_calc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="balance_processor" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -647,28 +636,47 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="optimization" />
-      <option name="SCRIPT_NAME" value="D:\DEV\Python\projects\optimization\key_layout\layout_permutations.py" />
+      <option name="SCRIPT_NAME" value="D:\DEV\Python\projects\optimization\key_layout\hand_permutations.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Python.balance_processor" />
-      <item index="1" class="java.lang.String" itemvalue="Python.branch_n_bound_sorted_density_relax" />
-      <item index="2" class="java.lang.String" itemvalue="Python.layout_processor" />
-      <item index="3" class="java.lang.String" itemvalue="Python.flow_processor" />
-      <item index="4" class="java.lang.String" itemvalue="Python.layout_score_calc" />
-      <item index="5" class="java.lang.String" itemvalue="Python.similarity_processor" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Doctests in balance_processor (1)" />
-      <item index="7" class="java.lang.String" itemvalue="Python.layout_permutations" />
+    <configuration default="false" name="flow" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\DEV\Python\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/key_layout" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="optimization" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_layout/flow_processor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="10">
+      <item index="0" class="java.lang.String" itemvalue="Python.hand_calc" />
+      <item index="1" class="java.lang.String" itemvalue="Python.balance_processor" />
+      <item index="2" class="java.lang.String" itemvalue="Python.branch_n_bound_sorted_density_relax" />
+      <item index="3" class="java.lang.String" itemvalue="Python.layout_processor" />
+      <item index="4" class="java.lang.String" itemvalue="Python.flow" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctest calc_hand_score" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Doctests in flow_processor" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Doctests in similarity_processor" />
+      <item index="8" class="java.lang.String" itemvalue="Python.hand_permutations" />
+      <item index="9" class="java.lang.String" itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.flow_processor" />
-        <item index="1" class="java.lang.String" itemvalue="Python.layout_permutations" />
-        <item index="2" class="java.lang.String" itemvalue="Python.layout_score_calc" />
-        <item index="3" class="java.lang.String" itemvalue="Python.similarity_processor" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in balance_processor (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.hand_permutations" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in flow_processor" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest calc_hand_score" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in similarity_processor" />
       </list>
     </recent_temporary>
   </component>
@@ -760,35 +768,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_balance_fingers - 2016.07.31 at 21h 36m 19s.xml">
-      <configuration name="Doctest balance_fingers" configurationId="tests" />
+    <history-entry file="Doctest_calc_hand_score - 2016.08.02 at 23h 33m 48s.xml">
+      <configuration name="Doctest calc_hand_score" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_balance_fingers - 2016.07.31 at 23h 26m 33s.xml">
-      <configuration name="Doctest balance_fingers" configurationId="tests" />
+    <history-entry file="Doctest_calc_hand_score - 2016.08.03 at 00h 40m 33s.xml">
+      <configuration name="Doctest calc_hand_score" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_balance_fingers - 2016.07.31 at 23h 27m 06s.xml">
-      <configuration name="Doctest balance_fingers" configurationId="tests" />
+    <history-entry file="Doctest_calc_hand_score - 2016.08.03 at 00h 41m 00s.xml">
+      <configuration name="Doctest calc_hand_score" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_calc_fingers - 2016.07.31 at 23h 27m 09s.xml">
-      <configuration name="Doctest calc_fingers" configurationId="tests" />
+    <history-entry file="Doctest_calc_hand_score - 2016.08.03 at 00h 41m 01s.xml">
+      <configuration name="Doctest calc_hand_score" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_calc_fingers - 2016.07.31 at 23h 27m 13s.xml">
-      <configuration name="Doctest calc_fingers" configurationId="tests" />
+    <history-entry file="Doctest_calc_hand_score - 2016.08.03 at 00h 41m 06s.xml">
+      <configuration name="Doctest calc_hand_score" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_balance_processor - 2016.07.31 at 00h 53m 24s.xml">
-      <configuration name="Doctests in balance_processor" configurationId="tests" />
+    <history-entry file="Doctests_in_flow_processor - 2016.08.03 at 00h 38m 30s.xml">
+      <configuration name="Doctests in flow_processor" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_balance_processor - 2016.07.31 at 21h 32m 38s.xml">
-      <configuration name="Doctests in balance_processor" configurationId="tests" />
+    <history-entry file="Doctests_in_flow_processor - 2016.08.03 at 00h 39m 56s.xml">
+      <configuration name="Doctests in flow_processor" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_balance_processor - 2016.07.31 at 21h 32m 46s.xml">
-      <configuration name="Doctests in balance_processor" configurationId="tests" />
+    <history-entry file="Doctests_in_flow_processor - 2016.08.03 at 00h 40m 07s.xml">
+      <configuration name="Doctests in flow_processor" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_balance_processor - 2016.08.01 at 00h 16m 52s.xml">
-      <configuration name="Doctests in balance_processor" configurationId="tests" />
+    <history-entry file="Doctests_in_flow_processor - 2016.08.03 at 00h 43m 51s.xml">
+      <configuration name="Doctests in flow_processor" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_balance_processor_(1) - 2016.08.01 at 01h 21m 35s.xml">
-      <configuration name="Doctests in balance_processor (1)" configurationId="tests" />
+    <history-entry file="Doctests_in_similarity_processor - 2016.08.02 at 23h 33m 38s.xml">
+      <configuration name="Doctests in similarity_processor" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -802,15 +810,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123958334" sideWeight="0.48346457" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123958334" sideWeight="0.48346457" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2578125" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13958333" sideWeight="0.51653546" order="2" side_tool="true" content_ui="tabs" />
@@ -824,6 +832,27 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123958334" sideWeight="0.48346457" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13958333" sideWeight="0.51653546" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -851,50 +880,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../GIT/dmtRoadNetworks/bruteforce-test.py" />
-    <entry file="file://$PROJECT_DIR$/../../../GIT/dmtRoadNetworks/path_combinations.py" />
-    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/1635456634/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4671" column="8" selection-start-line="4671" selection-start-column="8" selection-end-line="4671" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knapsack/brute_force_recursion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knapsack/branch_n_bound_sorted_weight_relax.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="16" column="7" selection-start-line="5" selection-start-column="0" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmtRoadNetworks/trash/metrica-GUI-from-presentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmtRoadNetworks/trash/GUI-test-map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmtRoadNetworks/metrica.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dmtRoadNetworks/trip.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1045,14 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/trash/complexity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/key_layout/data/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1065,22 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/data/bigrams.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15250">
-          <caret line="610" column="7" selection-start-line="610" selection-start-column="7" selection-end-line="610" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/data/data_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1375">
-          <caret line="55" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1101,89 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/data/freq_norvig.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/data/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/similarity_processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/balance_processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/layout_score_calc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-            <marker date="1470003771075" expanded="true" signature="166:284" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/layout_combinations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/flow_processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/layout_permutations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_bruteforce.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch8_bruteforce.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1200,27 +1078,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_processor.py">
+    <entry file="file://$PROJECT_DIR$/key_layout/trash/complexity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/key_layout/trash/letters_matplot.py">
+    <entry file="file://$PROJECT_DIR$/key_layout/data/layouts.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        <state relative-caret-position="275">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/data/bigrams.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="675" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/layout_score_calc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-368">
+          <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Anaconda3/Lib/site-packages/numba/dataflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4823">
+          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/key_layout/trash/letters_processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+        <state relative-caret-position="600">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/data/freq_norvig.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/trash/freq_of_hand_switch_bruteforce.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/trash/letters_matplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/data/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/data/data_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/a.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knapsack/greed_sorted_by_value.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/position_processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/hand_permutations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1375">
+          <caret line="58" column="33" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/layout_combinations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/hand_score_calc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/similarity_processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/balance_processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Anaconda3/Lib/timeit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/jit_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_layout/flow_processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1525">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

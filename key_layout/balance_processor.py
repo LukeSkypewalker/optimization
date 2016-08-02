@@ -5,13 +5,20 @@ from key_layout.data.data import freq
 
 fingers_balance_reference = [8, 11, 15, 15]
 
+#
+# def calc_disbalance_total(left_hand, right_hand):
+#     balance_fingers_left = calc_disbalance_fingers(left_hand)
+#     balance_fingers_right = calc_disbalance_fingers(right_hand)
+#     balance_hand = calc_disbalance_hands(left_hand)
+#     balance = balance_fingers_left + balance_fingers_right + balance_hand
+#     return max(balance, 1)
 
-def calc_disbalance(left_hand, right_hand):
-    balance_fingers_left = calc_balance_fingers(left_hand)
-    balance_fingers_right = calc_balance_fingers(right_hand)
-    balance_hand = calc_balance_hands(left_hand)
-    balance = balance_fingers_left + balance_fingers_right + balance_hand
-    return max(balance, 1)
+
+# def calc_disbalance_hand(hand):
+#     balance_fingers_left = calc_balance_fingers(hand)
+#     balance_hand = calc_balance_hands(hand)
+#     balance = balance_fingers_left + + balance_hand
+#     return max(balance, 1)
 
 
 def calc_fingers_rows(hand):
@@ -29,24 +36,26 @@ def calc_fingers_rows(hand):
     return rows
 
 
-def calc_balance_fingers(_hand):
+def calc_disbalance_fingers(_hand):
     """
-    >>> calc_balance_fingers(['A', 'E', 'S', 'T', 'U', 'D', 'C', 'F', 'G', 'B'])
-    5.620000000000001
-    >>> calc_balance_fingers(['O', 'R', 'I', 'N', 'L', 'H', 'Y', 'M', 'P', 'W'])
-    3.1699999999999973
+    >>> calc_disbalance_fingers(['A', 'E', 'S', 'T', 'U', 'D', 'C', 'F', 'G', 'B'])
+    1.0562
+    >>> calc_disbalance_fingers(['O', 'R', 'I', 'N', 'L', 'H', 'Y', 'M', 'P', 'W'])
+    1.0317
     """
     fingers_row = calc_fingers_rows(_hand)
-    res = [abs(a - b) for a, b in zip(fingers_balance_reference, fingers_row)]
-    return sum(res)
+    deviation = [abs(a - b) for a, b in zip(fingers_balance_reference, fingers_row)]
+    disbalance = 1 + 0.002 * sum(deviation)
+    return disbalance
 
 
-def calc_balance_hands(hand):
+def calc_disbalance_hands(hand):
     s = 0
     for letter in hand:
         s += freq[letter]
-    res = abs(50 - 1.095 - s)
-    return res
+    deviation = abs(50 - 1.095 - s)
+    disbalance = 1 + 0.01 * deviation
+    return disbalance
 
 
 if __name__ == '__main__':
@@ -59,9 +68,8 @@ if __name__ == '__main__':
     print('left', calc_fingers_rows(aest))
     print('right', calc_fingers_rows(niro))
 
-    print('left sum', calc_balance_fingers(aest))
-    print('right sum', calc_balance_fingers(niro))
+    print('left sum', calc_disbalance_fingers(aest))
+    print('right sum', calc_disbalance_fingers(niro))
 
-    print('balance hands', calc_balance_hands(aest))
+    print('balance hands', calc_disbalance_hands(aest))
 
-    print('sum', calc_disbalance(aest, niro))

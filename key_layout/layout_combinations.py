@@ -9,7 +9,7 @@ def get_best_hand_perm_bruteforce(letters):
     best_hand = hand_perms[0]
     best_score = 0
     for hand in hand_perms:
-        res = calc_hand_flow(hand, bigrams)
+        res = calc_flow(hand, bigrams)
         if res > best_score:
             best_score = res
             best_hand = hand
@@ -25,7 +25,7 @@ def get_best_hand_perm_smart(letters):
             not_in_comb = list([x for x in letters if x not in comb])
             for perm1 in list(permutations(not_in_comb)):
                 hand = perm0 + perm1
-                res = calc_hand_flow(hand, bigrams)
+                res = calc_flow(hand, bigrams)
                 if res > best_score:
                     best_score = res
                     best_hand = hand

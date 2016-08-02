@@ -1,6 +1,6 @@
 from itertools import permutations
 
-from key_layout.layout_permutations import calc_layout_flow
+from key_layout.hand_permutations import calc_layout_flow
 
 # left_hand_layout_combs = combinations(letters8, len(letters8) // 2)
 # comb_sums = calc_combs_sums(left_hand_layout_combs, bigrams8)

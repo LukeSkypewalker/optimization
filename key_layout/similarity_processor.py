@@ -1,11 +1,11 @@
 # TODO: redesign similarity model
 # TODO: hotkeys
 
-qwerty_rows = [['Q', 'A', 'Z'],
-               ['W', 'S', 'X'],
-               ['E', 'D', 'C'],
-               ['R', 'F', 'V'],
-               ['T', 'G', 'B']]
+qwerty_rows_right = [['Q', 'A', 'Z'],
+                     ['W', 'S', 'X'],
+                     ['E', 'D', 'C'],
+                     ['R', 'F', 'V'],
+                     ['T', 'G', 'B']]
 
 qwerty_hotkeys = [['2', '5', '6'],
                   ['W', '5', '6'],
@@ -16,7 +16,7 @@ qwerty_hotkeys = [['2', '5', '6'],
 
 def calc_similarity(hand, hand_ref):
     """
-    >>> calc_similarity(convert_to_raw(['A', 'E', 'S', 'T', 'U', 'D', 'C', 'F', 'G', 'B']), qwerty_rows)
+    >>> calc_similarity(convert_to_raw(['A', 'E', 'S', 'T', 'U', 'D', 'C', 'F', 'G', 'B']), qwerty_rows_right)
     43
     """
 
@@ -72,5 +72,5 @@ if __name__ == '__main__':
     aest = ['A', 'E', 'S', 'T', 'U', 'D', 'C', 'F', 'G', 'B']
     niro = ['O', 'R', 'I', 'N', 'L', 'H', 'Y', 'M', 'P', 'W']
 
-    res = calc_similarity(convert_to_raw(aest), qwerty_rows)
+    res = calc_similarity(convert_to_raw(aest), qwerty_rows_right)
     print(res)
