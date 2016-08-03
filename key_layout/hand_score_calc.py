@@ -2,7 +2,7 @@ from key_layout.balance_processor import calc_disbalance_fingers
 from key_layout.flow_processor import calc_flow
 
 
-def calc_hand_score(hand):
+def calc_hand_score(hand, bigrams10):
     """
     >>> calc_hand_score(['A', 'E', 'S', 'T', 'U', 'D', 'C', 'F', 'G', 'B'])
     2871427583.9803076
@@ -15,7 +15,7 @@ def calc_hand_score(hand):
     2801934941.2619944
     """
 
-    flow = calc_flow(hand)
+    flow = calc_flow(hand, bigrams10)
     disbalance = calc_disbalance_fingers(hand)
-    score = flow / disbalance
-    return score
+    # score = flow / disbalance
+    return flow

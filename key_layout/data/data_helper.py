@@ -47,7 +47,7 @@ def store_to_file(comb_sum, filename):
 
 if __name__ == '__main__':
 
-    bigrams = get_bigrams_list(get_data('data/bigrams.txt'))
+    bigrams = get_bigrams_list(get_data('data/bigrams26.txt'))
     from pprint import pprint
     pprint(bigrams)
     # equal to print(*bigrams, sep='\n')

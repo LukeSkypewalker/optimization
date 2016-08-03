@@ -4,7 +4,8 @@ Bigram = namedtuple("Bigram", ['a', 'b', 'frequency'])
 
 from key_layout.data.data_helper import *
 
-bigrams = get_bigrams_list(get_data('data/bigrams.txt'))
+bigrams = get_bigrams_list(get_data('data/bigrams26.txt'))
+bigrams_aest = get_bigrams_list(get_data('data/bigrams_aest.txt'))
 bigrams8 = get_bigrams_list(get_data('data/bigrams8.txt'))
 
 letters26 = ('E', 'T', 'A', 'O', 'I', 'N', 'S', 'R',
