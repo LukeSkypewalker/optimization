@@ -39,6 +39,8 @@ if __name__ == '__main__':
     doctest.testmod()
 
     aest = ['A', 'E', 'S', 'T', 'U', 'D', 'C', 'F', 'G', 'B']
-    print(timeit.timeit('calc_flow(aest, bigrams_aest)',
+    print('flow_score', calc_flow(aest, bigrams_aest))
+    print('time', timeit.timeit('calc_flow(aest, bigrams_aest)',
                         setup="from __main__ import calc_flow, aest, bigrams_aest",
                         number=10))
+
