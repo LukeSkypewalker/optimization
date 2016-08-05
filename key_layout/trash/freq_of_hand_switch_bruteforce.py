@@ -1,12 +1,12 @@
 from datetime import datetime
 from itertools import combinations
 
-from key_layout.data.data import letters26, bigrams
+from key_layout.data.data import letters26, bigrams, letters20
 from key_layout.data.data_helper import store_to_file
 from key_layout.trash.freq_of_hand_switch_processor import calc_combs_sums
 
 # left_hand_layout_combs = combinations(letters, len(letters) // 2)
-left_hand_layout_combs = combinations(letters26, 15)
+left_hand_layout_combs = combinations(letters20, 10)
 
 
 time_start = datetime.now()

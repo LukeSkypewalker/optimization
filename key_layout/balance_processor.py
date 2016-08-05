@@ -32,7 +32,7 @@ def calc_fingers_rows(hand):
     rows = [freq[hand[0]],
             freq[hand[1]] + freq[hand[4]],
             freq[hand[2]] + freq[hand[5]] + freq[hand[6]],
-            freq[hand[3]] + freq[hand[7]] + freq[hand[8]] + freq[hand[9]]]
+            freq[hand[3]] + freq[hand[7]] + freq[hand[8]]]  # + freq[hand[9]
     return rows
 
 
@@ -45,7 +45,7 @@ def calc_disbalance_fingers(_hand):
     """
     fingers_row = calc_fingers_rows(_hand)
     deviation = [abs(a - b) for a, b in zip(fingers_balance_reference, fingers_row)]
-    disbalance = 1 + 0.002 * sum(deviation)
+    disbalance = 1 + 0.01 * sum(deviation)
     return disbalance
 
 

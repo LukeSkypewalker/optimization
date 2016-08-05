@@ -37,11 +37,17 @@ def get_freq_dict(input_data):
     return f_dict
 
 
-def store_to_file(comb_sum, filename):
-    target = open(filename, 'w')
-    target.truncate()
-    target.write('\n'.join('%s ' % x for x in comb_sum))
-    target.close()
+# def store_to_file(comb_sum, filename):
+#     target = open(filename, 'w')
+#     target.truncate()
+#     target.write('\n'.join('%s ' % x for x in comb_sum))
+#     target.close()
+#     return
+
+
+def store_to_file(data, filename):
+    with open(filename, 'w') as file:
+        file.write('\n'.join('%s ' % x for x in data))
     return
 
 

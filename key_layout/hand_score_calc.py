@@ -17,5 +17,5 @@ def calc_hand_score(hand, bigrams10):
 
     flow = calc_flow(hand, bigrams10)
     disbalance = calc_disbalance_fingers(hand)
-    # score = flow / disbalance
-    return flow
+    score = flow / disbalance
+    return score
