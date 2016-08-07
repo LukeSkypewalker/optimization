@@ -15,8 +15,7 @@ def process_comb(left_hand, bigrams, letters):
     best_left = process_hand_perm(left_hand, bigrams, get_smart_permutations_left)
     best_right = process_hand_perm(right_hand, bigrams, get_smart_permutations_right)
     score = round((comb_hand_switch + best_left[1] + best_right[1])/disbalance_hands)
-    print(best_left[0], best_right[0], score)
-    return score
+    return best_left[0], best_right[0], score
 
 
 if __name__ == '__main__':

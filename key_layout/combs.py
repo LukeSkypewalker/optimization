@@ -1,4 +1,5 @@
 # TODO:
+from concurrent.futures import ProcessPoolExecutor
 from datetime import datetime
 from itertools import combinations
 from pprint import pprint
@@ -26,16 +27,15 @@ if __name__ == '__main__':
     combs = get_combs(letters18)
 
     time_start = datetime.now()
-    with concurrent.futures.ProcessPoolExecutor() as executor:
-        future = [executor.submit(process_comb, hand, bigrams18, letters18) for hand in combs[:16]]
+    with ProcessPoolExecutor() as executor:
+        futures = [executor.submit(process_comb, hand, bigrams18, letters18) for hand in combs]
     time_end = datetime.now()
     print('time', time_end - time_start)
+    result = [future.result() for future in futures]
+    result.sort(key=lambda x: x[2], reverse=True)
+    # pprint([future.result() for future in futures])
+    print(*result, sep='\n')
 
-    # with open('ccc.txt', 'w') as file:
-    #     file.write('\n'.join('%s %s %s %s %s %s %s %s %s %s' % x for x in combs))
-
-    # combs_hand_switch = calc_combs_sums(combs, bigrams20)
-    # combs_hand_switch.sort(key=lambda x: x[1], reverse=True)
-    # with open('xxx.txt', 'w') as file:
-    #     file.write('\n'.join('%s %s' % x for x in combs_hand_switch))
+    with open('zzz.txt', 'w') as file:
+        file.write('\n'.join('%s %s %s' % x for x in result))
 

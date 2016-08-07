@@ -72,4 +72,3 @@ if __name__ == '__main__':
     print('right sum', calc_disbalance_fingers(niro))
 
     print('balance hands', calc_disbalance_hands(aest))
-
