@@ -1,26 +1,21 @@
-import timeit
-from datetime import datetime
-from itertools import permutations, combinations
+from itertools import permutations
+from itertools import combinations
 from pprint import pprint
 
-from key_layout.data.data import freq, bigrams20, store_to_file
-from key_layout.hand_score_calc import calc_hand_score
+from key_layout.data import freq, bigrams20
+from key_layout.hand_calc_score import calc_hand_score
 
 
-def process_hand_perm(letters, bigrams, perm_function):
-
+def calc_best_permutation(letters, bigrams):
     bigrams_filtered = filter_bigrams(letters, bigrams)
-
-    letters.sort(key=lambda letter: freq[letter], reverse=True)
-
-    hand_permutations = perm_function(letters)
+    hand_permutations = get_permutations(letters)
 
     best_hand = letters
     best_flow_score = 0
-    data = []
+    # data = []
     for hand in hand_permutations:
         score = calc_hand_score(hand, bigrams_filtered)
-        data.append([hand, score])
+        # data.append([hand, score])
         if score > best_flow_score:
             best_flow_score = score
             best_hand = hand
@@ -31,22 +26,11 @@ def process_hand_perm(letters, bigrams, perm_function):
     return best_hand, best_flow_score
 
 
-def get_smart_permutations_right(letters):
+def get_permutations(letters):
     perms = []
-    for comb in list(combinations(letters[0:5], 4)):
-        not_in_comb = list([x for x in letters if x not in comb])
-        for perm4 in list(permutations(comb)):
-            for perm6 in list(permutations(not_in_comb)):
-                perm = perm4 + perm6
-                perms.append(perm)
-    return perms
-
-
-def get_smart_permutations_left(letters):
-    perms = []
-    for perm4 in list(permutations(letters[0:4])):
-        for perm6 in list(permutations(letters[4:])):
-            perm = perm4 + perm6
+    for home_row in list(permutations(letters[0:4])):
+        for others in list(permutations(letters[4:])):
+            perm = home_row + others
             perms.append(perm)
     return perms
 
@@ -75,7 +59,6 @@ def filter_bigrams(hand, bigrams):
 
 
 if __name__ == '__main__':
-    from itertools import combinations
     import doctest
 
     doctest.testmod()
@@ -93,8 +76,7 @@ if __name__ == '__main__':
     # time_end = datetime.now()
     # print('time ', time_end - time_start)
 
-    # left = get_smart_permutations_left(worst)
-    left = process_hand_perm(worst, bigrams20)
+    left = calc_best_permutation(worst, bigrams20)
     pprint(left)
 
     # print('timeit ', timeit.timeit(

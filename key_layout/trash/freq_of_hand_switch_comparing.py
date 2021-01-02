@@ -1,4 +1,5 @@
-from key_layout.trash.freq_of_hand_switch_processor import *
+from key_layout.trash.combs_sum import *
+from key_layout.data import *
 
 aset = ('Q', 'D', 'F', 'P', 'K',
         'A', 'S', 'E', 'T', 'G',
@@ -27,7 +28,6 @@ norman = ('Q', 'W', 'D', 'F', 'K',
 stnr = ('S', 'T', 'N', 'R', 'L', 'D', 'C', 'M', 'F', 'P', 'W', 'B', 'V')
 snrh = ('S', 'N', 'R', 'H', 'L', 'D', 'C', 'M', 'F', 'P', 'W', 'B', 'V')
 
-
 combs = (aset, qwerty, aest, aest2, norman, workman, stnr, snrh)
 
 comb_sum = calc_combs_sums(combs, bigrams)
@@ -35,4 +35,4 @@ comb_sum.sort(key=lambda comb: comb[1])
 
 for comb in comb_sum:
     print(comb)
-    print('hand switching frequency:', comb[1] / total_probability, '\n')
+    print('hand switching frequency:', comb[1] / total_probability20, '\n')

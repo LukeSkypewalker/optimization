@@ -1,11 +1,11 @@
-from key_layout.data.data import *
+from key_layout.data import *
 
 
 def calc_letter_freq(letter, bigrams):
     """
-    >>> calc_letter_freq('E', bigrams)
+    >>> calc_letter_freq('E', bigrams26)
     1031369703
-    >>> calc_letter_freq('A', bigrams)
+    >>> calc_letter_freq('A', bigrams26)
     739408216
     """
     return sum(b[2] for b in get_all_bigrams_for_letter(letter, bigrams))
@@ -14,7 +14,7 @@ def calc_letter_freq(letter, bigrams):
 
 def calc_letters_freq(letters, bigrams):
     """
-    >>> calc_letters_freq(('E','A'), bigrams) #doctest: +NORMALIZE_WHITESPACE
+    >>> calc_letters_freq(('E','A'), bigrams26) #doctest: +NORMALIZE_WHITESPACE
     [('E', 1031369703),
      ('A', 739408216)]
     """
@@ -45,7 +45,7 @@ def get_all_bigrams_for_letter(letter, bigrams):
 
 def get_bigram_list_summarized(_letter, bigrams):
     """
-    >>> get_bigram_list_summarized('E', bigrams) #doctest: +NORMALIZE_WHITESPACE
+    >>> get_bigram_list_summarized('E', bigrams26) #doctest: +NORMALIZE_WHITESPACE
     [['R', 138058, [['E', 'R', 77134382], ['R', 'E', 60923600]]],
      ['H', 108248, [['H', 'E', 100689263], ['E', 'H', 7559141]]],
      ['S', 88603, [['E', 'S', 57070453], ['S', 'E', 31532272]]],
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     doctest.testmod()
 
     # check letters frequencies
-    letters_freq = calc_letters_freq(letters26, bigrams)
+    letters_freq = calc_letters_freq(letters26, bigrams26)
     letters_freq.sort(key=lambda x: x[1], reverse=True)
     print(*letters_freq, sep='\n')
 

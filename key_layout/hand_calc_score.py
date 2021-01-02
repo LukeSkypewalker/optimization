@@ -1,5 +1,5 @@
-from key_layout.balance_processor import calc_disbalance_fingers
-from key_layout.flow_processor import calc_flow
+from key_layout.hand_calc_balance import calc_disbalance_fingers
+from key_layout.hand_calc_flow import calc_flow
 
 
 def calc_hand_score(hand, bigrams10):

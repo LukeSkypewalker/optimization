@@ -1,3 +1,8 @@
+from collections import namedtuple
+
+Bigram = namedtuple("Bigram", ['first', 'second', 'frequency'])
+
+
 def get_data(file_location):
     input_data_file = open(file_location, 'r')
     input_data = ''.join(input_data_file.readlines())
@@ -56,7 +61,6 @@ if __name__ == '__main__':
     bigrams = get_bigrams_list(get_data('data/bigrams26.txt'))
     from pprint import pprint
     pprint(bigrams)
-    # equal to print(*bigrams, sep='\n')
 
     # pprint(get_freq_dict(get_data('data/freq_norvig.txt')))
 

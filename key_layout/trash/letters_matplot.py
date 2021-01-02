@@ -1,10 +1,8 @@
-from pprint import pprint
-
 import matplotlib.pyplot as plt
 import numpy as np
 
-from key_layout.trash.letters_processor import get_bigram_list_summarized
-from key_layout.data.data import bigrams
+from key_layout.trash.data_letters_processor import get_bigram_list_summarized
+from key_layout.data import *
 
 # data = get_bigram_list_summarized('E', bigrams)
 # data = [get_bigram_list_summarized(letter) for letter in letters26]
@@ -32,7 +30,7 @@ width = 1  # the width of the bars: can also be len(x) sequence
 p1 = plt.bar(y, freq0, width, color='r')
 p2 = plt.bar(y, freq1, width, color='y', bottom=freq0)
 plt.ylabel('Scores')
-plt.title('Scores by group and gender')
+plt.title('Scores')
 y = np.array(y)
 plt.xticks(y+width/2., y_letters)
 plt.show()

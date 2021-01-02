@@ -1,4 +1,4 @@
-from key_layout.data.data import freq
+from key_layout.data import freq
 
 
 # TODO: redesign balance coefficient ?

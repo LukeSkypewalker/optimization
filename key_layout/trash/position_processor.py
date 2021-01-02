@@ -1,8 +1,4 @@
-from datetime import datetime
 from pprint import pprint
-
-from key_layout.data.data import bigrams
-
 
 # TODO:
 from key_layout.hand_permutations import get_smart_permutations_right
